@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Tumakov;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.BankClasses
 {
     public class Bank_account
     {

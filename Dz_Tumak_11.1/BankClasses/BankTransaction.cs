@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tumakov
+namespace Dz_Tumak_11._1.BankClasses
 {
     public class BankTransaction
     {

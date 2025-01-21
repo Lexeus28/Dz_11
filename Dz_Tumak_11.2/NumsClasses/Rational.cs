@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.NumsClasses
 {
-    [DeveloperInfo("Alexey Gabov", "19.01.2025")]
-    [DeveloperInfo("Grigory Chopirin", "19.01.2025")]
+    [DeveloperInfo("Алексей Габов", "19.01.2025")]
+    [DeveloperInfo("Григорий Чопырин", "19.01.2025")]
     public class Rational
     {
 

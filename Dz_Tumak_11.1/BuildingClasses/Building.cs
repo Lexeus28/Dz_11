@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Tumakov
+namespace Dz_Tumak_11._1.BuildingClasses
 {
     public class Building
     {

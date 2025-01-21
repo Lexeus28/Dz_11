@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.BuildingClasses
 {
-    [BuilderOrganizationInfo("Bob", "Boomstroi")]
-    [BuilderOrganizationInfo("Stepan", "Boomstroi")]
+    [DeveloperOrganizationInfo("Боб", "Бумстрой")]
+    [DeveloperOrganizationInfo("Степан", "Бумстрой")]
     public class Building
     {
         private string id;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.NumsClasses
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class DeveloperInfoAttribute : Attribute

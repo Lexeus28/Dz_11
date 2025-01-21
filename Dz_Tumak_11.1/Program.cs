@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Security.Principal;
+using Dz_Tumak_11._1.BankClasses;
+using Dz_Tumak_11._1.BuildingClasses;
 namespace Tumakov
 {
     class Program
@@ -50,10 +52,15 @@ namespace Tumakov
             Console.WriteLine(@" Домашнее задание 13.2 Создать класс для нескольких зданий.Поле класса – массив на 10
             зданий.В классе создать индексатор, возвращающий здание по его номеру.");
             Building building = new (76, 9, 36, 1);
+            Building building2 = new(32, 3, 14, 2);
             building.Print();
             building.FloorHeight();
             building.EntranceApartments();
             building.FloorApartments();
+            Zastroika zastroika = new Zastroika();
+            zastroika[5] = building;
+            zastroika[3] = building2;
+            zastroika[3].Print();
         }
     }
 }

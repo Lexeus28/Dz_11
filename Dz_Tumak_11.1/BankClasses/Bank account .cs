@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Tumakov;
 
-namespace Tumakov
+namespace Dz_Tumak_11._1.BankClasses
 {
     public class Bank_account
     {

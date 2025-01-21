@@ -1,5 +1,8 @@
 ﻿#define DEBUG_ACCOUNT
 using System;
+using Dz_Tumak_11._2.BankClasses;
+using Dz_Tumak_11._2.BuildingClasses;
+using Dz_Tumak_11._2.NumsClasses;
 namespace Tumakov
 {
     class Program
@@ -49,17 +52,17 @@ namespace Tumakov
             позволяет хранить в метаданных класса имя разработчика и, дополнительно, дату
             разработки класса. Атрибут должен позволять многократное использование. Использовать
             этот атрибут для записи имени разработчика класса рациональные числа (упражнение 12.2).");
-            Rational r1 = new Rational(14, 23);
-            Rational r2 = new Rational(24, 45);
+            Rational a = new Rational(14, 23);
+            Rational b = new Rational(24, 45);
 
-            Console.WriteLine($"r1: {r1}");
-            Console.WriteLine($"r2: {r2}");
-            Console.WriteLine($"r1 + r2: {r1 + r2}");
-            Console.WriteLine($"r1 - r2: {r1 - r2}");
-            Console.WriteLine($"r1 * r2: {r1 * r2}");
-            Console.WriteLine($"r1 / r2: {r1 / r2}");
-            Console.WriteLine($"(float)r1: {(float)r1}");
-            Console.WriteLine($"(int)r2: {(int)r2}");
+            Console.WriteLine($"a: {a}");
+            Console.WriteLine($"b: {b}");
+            Console.WriteLine($"a+b: {a+b}");
+            Console.WriteLine($"a-b: {a-b}");
+            Console.WriteLine($"a*b: {a*b}");
+            Console.WriteLine($"a/b: {a/b}");
+            Console.WriteLine($"float a: {(float)a}");
+            Console.WriteLine($"int b: {(int)b}");
 
             Attribute [] attributes = Attribute.GetCustomAttributes(typeof(Rational), typeof(DeveloperInfoAttribute));
             foreach (DeveloperInfoAttribute attribute in attributes)
@@ -77,10 +80,10 @@ namespace Tumakov
             building.FloorHeight();
             building.EntranceApartments();
             building.FloorApartments();
-            Attribute[] attributes = Attribute.GetCustomAttributes(typeof(Building), typeof(BuilderOrganizationInfoAttribute));
-            foreach (BuilderOrganizationInfoAttribute attribute in attributes)
+            Attribute[] attributes = Attribute.GetCustomAttributes(typeof(Building), typeof(DeveloperOrganizationInfoAttribute));
+            foreach (DeveloperOrganizationInfoAttribute attribute in attributes)
             {
-                Console.WriteLine($"Строитель: {attribute.builderName}, Организация: {attribute.organization}");
+                Console.WriteLine($"Разработчик: {attribute.developerName}, Организация: {attribute.organization}");
             }
         }
     }

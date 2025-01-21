@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.BuildingClasses
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
-    public class BuilderOrganizationInfoAttribute : Attribute
+    public class DeveloperOrganizationInfoAttribute : Attribute
     {
-        public string builderName { get; }
+        public string developerName { get; }
         public string organization { get; }
 
-        public BuilderOrganizationInfoAttribute(string builderName, string organization)
+        public DeveloperOrganizationInfoAttribute(string developerName, string organization)
         {
-            this.builderName = builderName;
+            this.developerName = developerName;
             this.organization = organization;
         }
     }

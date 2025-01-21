@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tumakov;
 
-namespace Tumakov
+namespace Dz_Tumak_11._2.BankClasses
 {
     public class BankAccountCreator
     {
